@@ -1,0 +1,11 @@
+
+#sidebar {
+  height: 100vh; /* vh = view height - 100% del view height, ed decir toda la vista de la pantalla */
+  width: 250px;
+}
+
+#list-button{
+  /* background-color: white; */
+  width: 100%;
+  text-align: left;
+}
