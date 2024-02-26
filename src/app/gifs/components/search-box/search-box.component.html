@@ -1,0 +1,14 @@
+
+
+<h5>Buscar: </h5>
+
+<input type="text"
+  class="form-control"
+  placeholder="Buscar gifs...."
+  (keyup.enter)="searchTag()"
+  #txtTagInput
+>
+
+<!-- (keyup) -  permite enviar el valor de cada una de las teclas presionadas -->
+<!-- (keyup.enter) -  permite enviar el valor del input cuando se haga enter -->
+<!-- #txtTagInput  - declara una referencia local -->
