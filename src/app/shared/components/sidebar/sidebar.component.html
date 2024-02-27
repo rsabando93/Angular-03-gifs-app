@@ -5,8 +5,11 @@
   <hr class="text-light">
   <div class="list-group list-reset"></div>
   <!-- <button id="" class="list-group-item list-group-item-action"> -->
-  <button id="list-button" class=" btn btn-light">
-    Valorant
+  <button *ngFor="let tag of tagHistory " id="list-button" class=" btn btn-light mb-1">
+   {{ tag | titlecase }}
+
   </button>
 
 </div>
+
+<!-- titlecase  =  permite capitalizar las palabras -->
