@@ -39,7 +39,7 @@ export class GifsService {
   }
 
   private saveLocalStorage(): void{
-    localStorage.setItem('history', JSON.stringify( this._tagsHistory ) ); //JSON.stringify con vierte mi objeto en un string para poder guardarlo en el localstorage
+    localStorage.setItem('history', JSON.stringify( this._tagsHistory ) ); //JSON.stringify convierte mi objeto en un string para poder guardarlo en el localstorage
   }                                                 // guarda en local storage mi arreglo de _tagsHistory
 
   private loadLocalStorage():void{
