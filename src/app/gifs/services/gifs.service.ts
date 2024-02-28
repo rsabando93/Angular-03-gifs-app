@@ -63,7 +63,7 @@ searchTag( tag:string ):void{
     // Peticion Http - AngularCommonHttp (Recomendada)
     const params = new HttpParams()
     .set('api_key', this.apiKey ) //el apikey de mi dashboard en Giphy
-    .set('limit', '3' ) // el limite de la peticio (10 imagenes)
+    .set('limit', '10' ) // el limite de la peticio (10 imagenes)
     .set('q', tag ); //el query ( el texto ingresado en el input)
 
     this.http.get<SearchResponse>(`${this.serviceUrl}/search`, { params }) //<SearchResponse> indica el tipo de dato que se esta recibiendo en la peticion usando una interface - de esta manera puedo saber todos los datos que vienen de esa peticion
