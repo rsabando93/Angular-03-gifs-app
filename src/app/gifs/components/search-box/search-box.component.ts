@@ -15,7 +15,7 @@ export class SearchBoxComponent {
                                                    // searchTag(newTag: string){
   searchTag(){
     const newTag = this.tagInput.nativeElement.value; //obtienen el valor del tagInput
-    console.log(newTag);
+   // console.log(newTag);
     this.gifsService.searchTag(newTag);
 
     this.tagInput.nativeElement.value = ''; //limpia el valor del tagInput

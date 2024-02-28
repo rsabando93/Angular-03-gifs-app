@@ -12,8 +12,12 @@ export class SidebarComponent {
 
   constructor( private gifsService: GifsService){}
 
-  get tagHistory(){  //se debe usar siempre getters cuando se obtiene un servicio privado para poder obtener los datos
+  get tagHistory(): string[]{  //se debe usar siempre getters cuando se obtiene un servicio privado para poder obtener los datos
     return this.gifsService.tagsHistory;
+  }
+
+  searchTagSidebar( tag: string ): void{
+    this.gifsService.searchTag(tag);
   }
 
 }
